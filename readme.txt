@@ -48,6 +48,9 @@ Each of these inSites can be created in less than 5 min with NO coding:
 = How does inSite work? =
 inSite allows you to dynamically personalize your website based on the conditions of when the visitor comes to your site, this means your site can automatically react to your visitors. It works on a system of triggers and changes. The trigger checks the conditions of when the visitor comes to the site and then triggers if it matches the rules you’ve set. You can see the list of available triggers below. The change is up to you: you can add a new element to your site, include some custom code (or shortcodes) or have a notification bar display on your site. You can see the available changes below. 
 
+= Can I use the inSite plugin on my localhost wordpress installation =
+Unfortunately not. The inSite plugin can only work on wordpress installations that have a public ip address and therefore wordpress running on localhost is not supported
+
 When you publish an inSite, we are generating a javascript file that is being added to your site by the wordpress plugin. This javascript file is being served from a cdn and have minimal impact on your site performance. The javascript file checks if the condition of the insite is met and if so it is executing the inSite change (action).
 
 = Do I need to register to inSite when activating an inSite? =
