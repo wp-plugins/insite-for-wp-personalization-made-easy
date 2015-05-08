@@ -9,7 +9,7 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Donate Link: http://insite.io
 
-inSite for WordPress is the simplest way to personalize your site and increase your conversion (beta version, please use Google Chrome)
+inSite for WordPress is the simplest way to personalize your site and increase your conversion (beta version, please use Google Chrome, dev sites on localhost are currently not supported)
 
 == Description ==
 
