@@ -7,6 +7,7 @@ Tested up to: 4.2.1
 Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Donate Link: http://insite.io
 
 inSite for WordPress is the simplest way to personalize your site and increase your conversion
 
@@ -102,3 +103,4 @@ No. When we add content to your site, we are doing it via JavaScript after the p
 
 
 == Upgrade Notice ==
+No upgrades notice yet as this is the initial version of the plugin
