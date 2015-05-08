@@ -50,6 +50,9 @@ inSite allows you to dynamically personalize your website based on the condition
 
 When you publish an inSite, we are generating a javascript file that is being added to your site by the wordpress plugin. This javascript file is being served from a cdn and have minimal impact on your site performance. The javascript file checks if the condition of the insite is met and if so it is executing the inSite change (action).
 
+= Do I need to register to inSite when activating an inSite =
+Yes, you will need to register register in order to activate your inSites.
+inSite is a service provided by Duda. Registering will allow Duda to send you statistics emails about the performance of your inSites, will allow you to share inSites with the community and setup your profile.
 
 = What are the triggers available to build an inSite? =
 1.	Time - Define the time and date that you want the inSite  to appear, it can be a recurring event (daily, weekly, monthly) or one time thing. 
