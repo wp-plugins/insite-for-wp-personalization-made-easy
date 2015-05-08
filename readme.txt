@@ -9,13 +9,14 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Donate Link: http://insite.io
 
-inSite for WordPress is the simplest way to personalize your site and increase your conversion (beta version, please use Google Chrome, dev sites on localhost are currently not supported)
+inSite for WordPress is the simplest way to personalize your site and increase your conversion (beta version, localhost not supported, use Google Chrome)
 
 == Description ==
 
 inSites solve one of the biggest problems facing website owners, developers and marketers: How do I make my site more interesting, dynamic and personal in order to drive better conversion and most importantly, without it costing me huge amounts of money and time? 
 
 inSites are smart, personalized recipes that automatically CHANGE your website at pre determined TRIGGER points (such as Time, Location or Visits etc) to create a richer, more engaged and relevant visitor experience that drives greater conversion.
+
 
 “inSites have helped me make my site more active and personal. I’m always thinking about what I can do or change to drive greater conversion because inSites are just so easy to use”
 A Business Owner
