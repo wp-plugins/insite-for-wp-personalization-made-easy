@@ -17,6 +17,7 @@ inSites solve one of the biggest problems facing website owners, developers and 
 
 inSites are smart, personalized recipes that automatically CHANGE your website at pre determined TRIGGER points (such as Time, Location or Visits etc) to create a richer, more engaged and relevant visitor experience that drives greater conversion.
 
+See video at: https://vimeo.com/126690533
 
 “inSites have helped me make my site more active and personal. I’m always thinking about what I can do or change to drive greater conversion because inSites are just so easy to use”
 A Business Owner
@@ -24,13 +25,21 @@ A Business Owner
 
 Each of these inSites can be created in less than 5 min with NO coding:  
 1.	Add a special sale offer during sale periods. 
+
 2.	Inform users about new product and / or blog posts via notification bar. 
+
 3.	Celebrate the holidays using snowflakes or fireworks effects on your site. 
+
 4.	Add a cool video to the site for first time visitor.
+
 5.	Display a newsletter registration for users that comes to the site for the 2nd time.
+
 6.	Identify visitor coming from dedicated campaign URL and display different info on the homepage (no need for a different landing page any more).
+
 7.	Have a few branches? Change the phone no. according to the location of your site visitor. 
+
 8.	Inform customers of your charity campaigns via a notification bar.
+
 9.	Developer? you can create any inSite you can think of using our custom javascript trigger and action
 
 
@@ -45,6 +54,8 @@ Each of these inSites can be created in less than 5 min with NO coding:
 7. Go through the wizards step and activate your inSite
 
 == Frequently Asked Questions ==
+
+See full FAQs at: http://www.insite.io/faqs/
 
 = How does inSite work? =
 inSite allows you to dynamically personalize your website based on the conditions of when the visitor comes to your site, this means your site can automatically react to your visitors. It works on a system of triggers and changes. The trigger checks the conditions of when the visitor comes to the site and then triggers if it matches the rules you’ve set. You can see the list of available triggers below. The change is up to you: you can add a new element to your site, include some custom code (or shortcodes) or have a notification bar display on your site. You can see the available changes below. 
