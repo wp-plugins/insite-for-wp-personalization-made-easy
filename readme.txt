@@ -24,15 +24,15 @@ A Business Owner
 
 
 Each of these inSites can be created in less than 5 min with NO coding:  
-1.	Add a special sale offer during sale periods. 
-2.	Inform users about new product and / or blog posts via notification bar. 
-3.	Celebrate the holidays using snowflakes or fireworks effects on your site. 
-4.	Add a cool video to the site for first time visitor.
-5.	Display a newsletter registration for users that comes to the site for the 2nd time.
-6.	Identify visitor coming from dedicated campaign URL and display different info on the homepage (no need for a different landing page any more).
-7.	Have a few branches? Change the phone no. according to the location of your site visitor. 
-8.	Inform customers of your charity campaigns via a notification bar.
-9.	Developer? you can create any inSite you can think of using our custom javascript trigger and action
+* Add a special sale offer during sale periods. 
+* Inform users about new product and / or blog posts via notification bar. 
+* Celebrate the holidays using snowflakes or fireworks effects on your site. 
+* Add a cool video to the site for first time visitor.
+* Display a newsletter registration for users that comes to the site for the 2nd time.
+* Identify visitor coming from dedicated campaign URL and display different info on the homepage (no need for a different landing page any more).
+* Have a few branches? Change the phone no. according to the location of your site visitor. 
+* Inform customers of your charity campaigns via a notification bar.
+* Developer? you can create any inSite you can think of using our custom javascript trigger and action
 
 
 == Installation ==
