@@ -35,6 +35,7 @@ Each of these inSites can be created in less than 5 min with NO coding:
 * Developer? you can create any inSite you can think of using our custom javascript trigger and action
 
 
+
 == Installation ==
 
 1. Go to your WordPress Control Panel
