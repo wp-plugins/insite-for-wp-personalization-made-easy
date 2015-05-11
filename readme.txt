@@ -45,6 +45,7 @@ Each of these inSites can be created in less than 5 min with NO coding:
 6. Check out the cool inSites in the inSite Library page and create your first inSite
 7. Go through the wizards step and activate your inSite
 
+
 == Frequently Asked Questions ==
 
 See full FAQs at: http://www.insite.io/faqs/
