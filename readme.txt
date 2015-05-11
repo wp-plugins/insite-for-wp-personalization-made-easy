@@ -24,6 +24,7 @@ A Business Owner
 
 
 Each of these inSites can be created in less than 5 min with NO coding:  
+
 * Add a special sale offer during sale periods. 
 * Inform users about new product and / or blog posts via notification bar. 
 * Celebrate the holidays using snowflakes or fireworks effects on your site. 
