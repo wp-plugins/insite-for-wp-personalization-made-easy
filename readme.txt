@@ -24,6 +24,7 @@ A Business Owner
 
 
 Each of these inSites can be created in less than 5 min with NO coding:  
+
 * Add a special sale offer during sale periods. 
 * Inform users about new product and / or blog posts via notification bar. 
 * Celebrate the holidays using snowflakes or fireworks effects on your site. 
@@ -35,7 +36,6 @@ Each of these inSites can be created in less than 5 min with NO coding:
 * Developer? you can create any inSite you can think of using our custom javascript trigger and action
 
 
-
 == Installation ==
 
 1. Go to your WordPress Control Panel
@@ -45,6 +45,7 @@ Each of these inSites can be created in less than 5 min with NO coding:
 5. Click the "Activate Plugin" link
 6. Check out the cool inSites in the inSite Library page and create your first inSite
 7. Go through the wizards step and activate your inSite
+
 
 == Frequently Asked Questions ==
 
