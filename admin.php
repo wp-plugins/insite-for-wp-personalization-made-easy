@@ -25,7 +25,7 @@ class Insite_Admin
      * Add menu and pages
      */
     public function menu () {
-        add_menu_page( 'inSite', 'inSite', true, 'insite', array( $this, 'insitePage' ), plugins_url( "assets/images/v.png", __FILE__ ), 61 );
+        add_menu_page( 'inSite', 'inSite', true, 'insite', array( $this, 'insitePage' ), plugins_url( "assets/images/v.png", __FILE__ ));
         add_submenu_page( 'insite', 'inSite Library', 'inSite Library', true, 'insite', array( $this, 'insitePage' ));
         add_submenu_page( 'insite', 'My inSites', 'My inSites', true, 'insite-my', array( $this, 'dashboardPage' ));
         add_submenu_page( 'insite', 'My Profile', 'My Profile', true, 'insite-profile', array( $this, 'dashboardPage' ));
