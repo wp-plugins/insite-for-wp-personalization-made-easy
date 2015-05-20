@@ -83,7 +83,7 @@ class InSite_Proxy {
             return $data->scripts;
         }
 
-        return [];
+        return array();
     }
 
     public function getProxyModeHeaderJs () {
