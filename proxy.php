@@ -51,7 +51,7 @@ class InSite_Proxy {
 
     public function injectProxyScripts () {
         wp_enqueue_script( 'insite-crosser', 'https://insite.s3.amazonaws.com/io-plugin/crosser.js' );
-        wp_enqueue_script( 'insite-proxy', plugins_url( 'assets/js/insite-proxy.js', __FILE__ ) );
+        wp_enqueue_script( 'insite-proxy', plugins_url( 'assets/js/insite-proxy.js', __FILE__ ), null, null, true );
     }
 
     public function injectScriptsFromParam () {
