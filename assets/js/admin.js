@@ -115,6 +115,10 @@ var insiteAdmin = {
 
         openBrowser: function(){
             window.location.href = this.adminPath + 'admin.php?page=insite';
+        },
+
+        goToAdminPath: function(path){
+            window.location.href = this.adminPath + path;
         }
     },
 
@@ -149,6 +153,7 @@ var insiteAdmin = {
         this.crosser.subscribeEvent('previewInsite', this.iframeEvents.previewInsite.bind(this));
         this.crosser.subscribeEvent('openDashboard', this.iframeEvents.openDashboard.bind(this));
         this.crosser.subscribeEvent('openBrowser', this.iframeEvents.openBrowser.bind(this));
+        this.crosser.subscribeEvent('goToAdminPath', this.iframeEvents.goToAdminPath.bind(this));
     }
 };
 

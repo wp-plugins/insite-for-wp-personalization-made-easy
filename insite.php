@@ -3,7 +3,7 @@
 * Plugin Name: inSite for WP: personalization made easy
 * Plugin URI: http://insite.io
 * Description: inSites are smart, personalized recipes that automatically CHANGE your website at pre determined TRIGGER points (such as Time, Location or Visits etc) to create a richer, more engaged and relevant visitor experience that drives greater conversion.
-* Version: 1.0
+* Version: 1.1.0
 * Author: Duda
 * Author URI: http://www.dudamobile.com
 * License: GPLv2 or later
@@ -14,19 +14,24 @@
 require_once plugin_dir_path( __FILE__ ) . 'admin.php';
 
 class InSite_Plugin {
+    const PROXY_MODE_PARAM = 'io-proxy';
+
     /**
      * Construct function for register and create admin
      */
     function __construct() {
         register_activation_hook(__FILE__, array($this, 'install'));
         register_uninstall_hook(    __FILE__, array( '$this', 'uninstall' ) );
+        add_action('admin_init', array($this, 'insite_plugin_redirect'));
 
 
         add_action('get_header', array($this, 'add_grid_style'));
         add_action('wp_enqueue_scripts', array($this, 'writeInsiteJsHeader'), 1000000);
-        add_action('wp_enqueue_scripts', array($this, 'registerPluginScript'));
         add_action('wp_footer', array($this, 'writeInsiteJsFooter'), 1000000);
+        add_action('wp_enqueue_scripts', array($this, 'registerPluginScript'));
         add_filter ('the_content', array($this, 'addPostMarker'), 1000000);
+
+        $this->checkProxyMode();
 
         if( is_admin() ) {
             new Insite_Admin();
@@ -45,7 +50,15 @@ class InSite_Plugin {
      * Install when activate the plugin
      */
     public function install() {
+        add_option('insite_plugin_do_activation_redirect', true);
         update_option('insite_js_version', '1');
+    }
+
+    public function insite_plugin_redirect() {
+        if (get_option('insite_plugin_do_activation_redirect', false)) {
+            delete_option('insite_plugin_do_activation_redirect');
+            wp_redirect(admin_url(). 'admin.php?page=insite');
+        }
     }
 
     /**
@@ -76,17 +89,27 @@ class InSite_Plugin {
         }
     }
 
-    public function writeInsiteJsHeader() {
+    public function checkProxyMode () {
+        if (!isset($_GET[self::PROXY_MODE_PARAM])) {
+            return;
+        }
+
+        include plugin_dir_path( __FILE__ ) . 'proxy.php';
+
+        new InSite_Proxy();
+    }
+
+    public function writeInsiteJsHeader () {
         echo '<script>';
         echo 'window.INSITE = window.INSITE || {};';
         echo $this->getPageIdJs();
+        echo $this->getShortCodesJs();
         echo '</script>';
     }
 
-    public function writeInsiteJsFooter() {
+    public function writeInsiteJsFooter () {
         echo '<script>';
         echo 'window.INSITE = window.INSITE || {};';
-        echo $this->getShortCodesJs();
         echo '</script>';
     }
 
@@ -94,7 +117,7 @@ class InSite_Plugin {
     * Print the shortcode widgets to the end of the body encoded in base64.
     * The runtime script will decode the markup and will inject it to the right container
     */
-    public function getShortCodesJs() {
+    public function getShortCodesJs () {
         $js = 'INSITE.shortCodes = {';
         $shortcodes = get_option( 'insite_shortcodes' );
 
@@ -123,9 +146,8 @@ class InSite_Plugin {
         return 'window.INSITE.currentPage = "' . $current_page . '";';
     }
 
-    public function addPostMarker($content) {
-        $content = '<div class="io-post-marker" style="display:none"></div>' . $content;
-        return $content;
+    public function addPostMarker ($content) {
+        return '<div class="io-post-marker" style="display:none"></div>' . $content;
     }
 }
 

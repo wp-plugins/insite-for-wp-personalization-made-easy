@@ -4,12 +4,12 @@ Contributors: insite.io
 Tags: inSite, Duda, website personalization, trigger, action, change, notification, personalization, smart site, custom website, marketing tool, conversion, dynamic web content, plugin, shortcode, behavior marketing, customer behavior, Dudamobile
 Requires at least: 3.0.1
 Tested up to: 4.2.1
-Stable tag: 1.0.0
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Donate Link: http://insite.io
 
-inSite for WordPress is the simplest way to personalize your site and increase conversion (beta version, localhost not supported, use Google Chrome)
+inSite for WordPress is the simplest way to personalize your site and increase conversion (beta version)
 
 == Description ==
 
@@ -110,9 +110,19 @@ No. When we add content to your site, we are doing it via JavaScript after the p
 
 == Changelog ==
 
+= 1.1.0 =
+* Support working on localhost or servers without a public IP
+* Support Firefox and Safari browsers
+* Full support for admins running on https (ssl)
+* Added feedback tool
+* Other small bug fixes and design changes
+
 = 1.0.0 =
 * Initial release of the inSite for WP plugin
 
 
+
 == Upgrade Notice ==
-No upgrades notice yet as this is the initial version of the plugin
+
+= 1.1.0 =
+Mandatory upgrade in order to support localhost and other browsers beside Google chrome.
