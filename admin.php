@@ -335,7 +335,7 @@ class Insite_Admin
     }
 
     public static function getPluginVersion() {
-        $data = get_plugin_data( __DIR__ . '/insite.php' );
+        $data = get_plugin_data( plugin_dir_path( __FILE__ ) . 'insite.php' );
         return $data['Version'];
     }
 }
