@@ -1,0 +1,21 @@
+#insite_iframe {
+    background-color: #eaeaea;
+    box-sizing: border-box;
+    margin-top: 0;
+    padding-right: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+#wpcontent {
+    padding-left: 0;
+    background-color: #eaeaea;
+}
+
+.update-nag {
+    display: none;
+}
+
+#wpbody-content {
+    padding-bottom: 36px;
+}
