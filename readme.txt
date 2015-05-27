@@ -4,12 +4,12 @@ Contributors: insite.io
 Tags: inSite, Duda, website personalization, trigger, action, change, notification, personalization, smart site, custom website, marketing tool, conversion, dynamic web content, plugin, shortcode, behavior marketing, customer behavior, Dudamobile
 Requires at least: 3.0.1
 Tested up to: 4.2.1
-Stable tag: 1.1.1
+Stable tag: 1.2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Donate Link: http://insite.io
 
-inSite for WordPress is the simplest way to personalize your site and increase conversion (beta version)
+inSite for WordPress is the simplest way to personalize your site, add notification bar and increase conversion (beta version)
 
 == Description ==
 
@@ -110,6 +110,16 @@ No. When we add content to your site, we are doing it via JavaScript after the p
 
 == Changelog ==
 
+= 1.2.0 =
+* Mobile edit and preview so you can see how your inSites look like on mobile
+* Support dozens new font types so you can create more beautiful inSites
+* Ability to customize padding and margins of elements in New Element inSites
+* New inSites dedicated to mobile experience like click to call and directions 
+* Notification bar is not displayed anymore to users who closed it or click on a link inside a notification
+* Fix preview bug for ssl installations
+* Remove annoying margin on top and bottom of new elements
+
+
 = 1.1.1 =
 * Fix new element insite sometimes doesn't appear bug
 
@@ -126,6 +136,9 @@ No. When we add content to your site, we are doing it via JavaScript after the p
 
 
 == Upgrade Notice ==
+
+= 1.2.0 =
+Upgrade that contains new features including mobile preview and editing. People who don't upgrade the plugin will still see the changes as most of the changes are done on the inSite backend servers.
 
 = 1.1.1 =
 Mandatory upgrade in order to add new element inSite.
