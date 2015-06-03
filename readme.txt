@@ -4,7 +4,7 @@ Contributors: insite.io
 Tags: inSite, Duda, website personalization, trigger, action, change, notification, personalization, smart site, custom website, marketing tool, conversion, dynamic web content, plugin, shortcode, behavior marketing, customer behavior, Dudamobile
 Requires at least: 3.0.1
 Tested up to: 4.2.1
-Stable tag: 1.2.0
+Stable tag: 1.3.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Donate Link: http://insite.io
@@ -110,6 +110,11 @@ No. When we add content to your site, we are doing it via JavaScript after the p
 
 == Changelog ==
 
+= 1.3.0 =
+* Statistics for your inSites! You can now see how many people saw and clicked each inSite
+* HTML editing for notification bar so you can create more sophisticated messages
+* Several bug fixes
+
 = 1.2.0 =
 * Mobile edit and preview so you can see how your inSites look like on mobile
 * Support dozens new font types so you can create more beautiful inSites
@@ -136,6 +141,9 @@ No. When we add content to your site, we are doing it via JavaScript after the p
 
 
 == Upgrade Notice ==
+
+= 1.3.0 =
+* Upgrade that contains new features including stats for inSites and html editing for notification bars. People who don't upgrade the plugin will still see the changes as most of the changes are done on the inSite backend servers.
 
 = 1.2.0 =
 Upgrade that contains new features including mobile preview and editing. People who don't upgrade the plugin will still see the changes as most of the changes are done on the inSite backend servers.

@@ -3,7 +3,7 @@
 * Plugin Name: inSite for WP: personalization made easy
 * Plugin URI: http://insite.io
 * Description: inSites are smart, personalized recipes that automatically CHANGE your website at pre determined TRIGGER points (such as Time, Location or Visits etc) to create a richer, more engaged and relevant visitor experience that drives greater conversion.
-* Version: 1.2.0
+* Version: 1.3.0
 * Author: Duda
 * Author URI: http://www.dudamobile.com
 * License: GPLv2 or later
