@@ -3,7 +3,7 @@
 * Plugin Name: inSite for WP: personalization made easy
 * Plugin URI: http://insite.io
 * Description: inSites are smart, personalized recipes that automatically CHANGE your website at pre determined TRIGGER points (such as Time, Location or Visits etc) to create a richer, more engaged and relevant visitor experience that drives greater conversion.
-* Version: 1.5.0
+* Version: 1.5.1
 * Author: Duda
 * Author URI: http://www.dudamobile.com
 * License: GPLv2 or later
@@ -23,13 +23,14 @@ class InSite_Plugin {
         register_activation_hook(__FILE__, array($this, 'install'));
         register_uninstall_hook(    __FILE__, array( '$this', 'uninstall' ) );
         add_action('admin_init', array($this, 'insite_plugin_redirect'));
-
-
         add_action('get_header', array($this, 'add_grid_style'));
         add_action('wp_enqueue_scripts', array($this, 'writeInsiteJsHeader'), 1000000);
         add_action('wp_footer', array($this, 'writeInsiteJsFooter'), 1000000);
         add_action('wp_enqueue_scripts', array($this, 'registerPluginScript'));
         add_filter ('the_content', array($this, 'addPostMarker'), 1000000);
+        //add_filter('the_title', array($this, 'addWooCommercePostMarker'), 1000000);
+
+        add_action( 'woocommerce_before_shop_loop', array($this, 'addWooCommercePostMarker'), 1000000 );
 
         $this->checkProxyMode();
 
@@ -139,6 +140,11 @@ class InSite_Plugin {
 
         if (is_home()) {
             $current_page = '__home__';
+        } if ($this->isWooCommerceShopPage()) {
+            $shop_name = str_replace(site_url(), '', get_permalink(get_option( 'woocommerce_shop_page_id' )));
+            $shop_name = str_replace('/', '', $shop_name);
+
+            $current_page = get_option('page_on_front') ==  woocommerce_get_page_id('shop') ? '__home__' : $shop_name;
         } else if ($post) {
             $current_page = get_option('page_on_front') ==  $post->ID ? '__home__' : $post->post_name;
         }
@@ -149,6 +155,25 @@ class InSite_Plugin {
     public function addPostMarker ($content) {
         return '<div class="io-post-marker" style="display:none"></div>' . $content;
     }
+
+    public function addWooCommercePostMarker ($title) {
+        if ($this->isWooCommerceShopPage()) {
+            echo '<div class="io-post-marker" style="display:none"></div>';
+        }
+    }
+
+    public function wooCommerceExists () {
+        return class_exists( 'WooCommerce' );
+    }
+
+    public function isWooCommerceShopPage() {
+        return $this->wooCommerceExists() && is_shop();
+    }
+}
+
+function logit($obj) {
+    print_r($obj);
+    die();
 }
 
 // initiate the plugin

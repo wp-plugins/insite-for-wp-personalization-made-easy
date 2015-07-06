@@ -4,7 +4,7 @@ Contributors: insite.io
 Tags: inSite, Duda, website personalization, trigger, action, change, notification, personalization, smart site, custom website, marketing tool, conversion, dynamic web content, plugin, shortcode, behavior marketing, customer behavior, Dudamobile
 Requires at least: 3.0.1
 Tested up to: 4.2.1
-Stable tag: 1.5.0
+Stable tag: 1.5.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Donate Link: http://insite.io
@@ -103,6 +103,9 @@ No. When we add content to your site, we are doing it via JavaScript after the p
 
 == Changelog ==
 
+= 1.5.1 =
+* WooCommerce related bug fixes
+
 = 1.5.0 =
 * Support wordpress sites that are using the DudaMobile mobile website solution
 * Several bug fixes
@@ -144,6 +147,9 @@ No. When we add content to your site, we are doing it via JavaScript after the p
 
 
 == Upgrade Notice ==
+
+= 1.5.1 =
+* Upgrade to better support WooCommerce themes.
 
 = 1.5.0 =
 * Upgrade for supporting wordpress websites who are using the DudaMobile mobile solution. People who don't upgrade the plugin will still see the changes as most of the changes are done on the inSite backend servers.
