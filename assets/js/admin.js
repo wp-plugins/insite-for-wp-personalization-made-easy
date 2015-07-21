@@ -119,6 +119,14 @@ var insiteAdmin = {
 
         goToAdminPath: function(path){
             window.location.href = this.adminPath + path;
+        },
+
+        connectAccount: function (data) {
+            var _self = this;
+            jQuery.post(ajaxurl, {'action': 'insite_connect_account','data': data}, function(response) {
+                console.log('connect url: ' + response);
+                _self.crosser.triggerEvent('redirectToUrl', response);
+            });
         }
     },
 
@@ -154,6 +162,7 @@ var insiteAdmin = {
         this.crosser.subscribeEvent('openDashboard', this.iframeEvents.openDashboard.bind(this));
         this.crosser.subscribeEvent('openBrowser', this.iframeEvents.openBrowser.bind(this));
         this.crosser.subscribeEvent('goToAdminPath', this.iframeEvents.goToAdminPath.bind(this));
+        this.crosser.subscribeEvent('connectAccount', this.iframeEvents.connectAccount.bind(this));
     }
 };
 

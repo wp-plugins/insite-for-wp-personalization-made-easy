@@ -19,6 +19,8 @@ class Insite_Admin
         add_action( 'wp_ajax_insite_delete_shortcode', array( $this, 'deleteShortCodeWidget' ) );
         add_action( 'wp_ajax_insite_delete_shortcodes', array( $this, 'cleanShortCodes' ) );
         add_action( 'wp_ajax_insite_cleanup', array( $this, 'cleanup' ) );
+        add_action( 'wp_ajax_insite_connect_account', array( $this, 'connectAccount' ) );
+       
     }
 
     /**
@@ -67,6 +69,7 @@ class Insite_Admin
 
         if (!get_option('insite_site_id')) {
             $site_url = get_site_url();
+            $theme_name = $this->getThemeName();
 
             $headers = array(
                 'Content-Type' => 'application/json',
@@ -74,7 +77,8 @@ class Insite_Admin
             );
 
             $body =  array (
-                'value' =>  $site_url
+                'value' =>  $site_url,
+                'themeName' => $theme_name
             );
 
             $response = $this->postInsiteServerAPI('insite/sites',json_encode($body),$headers);
@@ -328,6 +332,42 @@ class Insite_Admin
         die("cleanup");
     }
 
+   /* 
+        Call server to connect installation to an existing account,
+        given a temporary connect token.
+    */
+    public function connectAccount () {
+        global $insiteConfig;
+
+        $api_token = get_option('insite_api_token');
+
+        $connectToken = $_POST['data']['connectToken'];
+          
+        $nextUrl = $_POST['data']['nextUrl'];
+
+        $headers = array(
+                'Content-Type' => 'application/json',
+                'IO-API-AUTHENTICATE' => $api_token
+        );
+
+        $body =  array (
+            'connectToken' =>  $connectToken
+        );
+
+        $response = $this->postInsiteServerAPI('insite/accounts/switch',json_encode($body),$headers);
+        $res = json_decode($response['body']);
+        update_option('insite_api_token',$res->apiToken);
+        $urlparam = $res->ssoData->url_parameter;
+        $ret_sso_token = $urlparam->name.'='. $urlparam->value;
+        $nextUrlRet =   $insiteConfig['insiteUIServerBase'].'/server/login?'.$ret_sso_token.'&next='.urlencode($insiteConfig['insiteUIServerBase'].$nextUrl);
+        $ret = array (
+            'url' => $nextUrlRet
+        );
+
+        die(json_encode($ret));
+
+    }
+
     public function addScriptsAndStyles() {
         wp_enqueue_script( 'insite-admin-crosser', 'https://insite.s3.amazonaws.com/io-plugin/crosser.js' );
         wp_enqueue_style( 'insite-admin', plugins_url( 'assets/css/admin.css', __FILE__ ) );
@@ -337,5 +377,16 @@ class Insite_Admin
     public static function getPluginVersion() {
         $data = get_plugin_data( plugin_dir_path( __FILE__ ) . 'insite.php' );
         return $data['Version'];
+    }
+
+    public function getThemeName() {
+        if (function_exists('wp_get_theme')) {
+            $theme = wp_get_theme();
+            return $theme->Name;
+        } else if (function_exists('get_current_theme')) {
+            return get_current_theme();
+        }
+
+        return null;
     }
 }
