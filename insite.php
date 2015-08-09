@@ -3,7 +3,7 @@
 * Plugin Name: inSite for WP: personalization made easy
 * Plugin URI: http://insite.io
 * Description: inSites are smart, personalized recipes that automatically CHANGE your website at pre determined TRIGGER points (such as Time, Location or Visits etc) to create a richer, more engaged and relevant visitor experience that drives greater conversion.
-* Version: 1.5.2
+* Version: 1.5.3
 * Author: Duda
 * Author URI: http://www.dudamobile.com
 * License: GPLv2 or later
@@ -140,7 +140,7 @@ class InSite_Plugin {
 
         if (is_home()) {
             $current_page = '__home__';
-        } if ($this->isWooCommerceShopPage()) {
+        } else if ($this->isWooCommerceShopPage()) {
             $shop_name = str_replace(site_url(), '', get_permalink(get_option( 'woocommerce_shop_page_id' )));
             $shop_name = str_replace('/', '', $shop_name);
 
@@ -169,11 +169,6 @@ class InSite_Plugin {
     public function isWooCommerceShopPage() {
         return $this->wooCommerceExists() && is_shop();
     }
-}
-
-function logit($obj) {
-    print_r($obj);
-    die();
 }
 
 // initiate the plugin

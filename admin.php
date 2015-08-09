@@ -20,7 +20,7 @@ class Insite_Admin
         add_action( 'wp_ajax_insite_delete_shortcodes', array( $this, 'cleanShortCodes' ) );
         add_action( 'wp_ajax_insite_cleanup', array( $this, 'cleanup' ) );
         add_action( 'wp_ajax_insite_connect_account', array( $this, 'connectAccount' ) );
-       
+
     }
 
     /**
@@ -332,7 +332,7 @@ class Insite_Admin
         die("cleanup");
     }
 
-   /* 
+   /*
         Call server to connect installation to an existing account,
         given a temporary connect token.
     */
@@ -342,7 +342,7 @@ class Insite_Admin
         $api_token = get_option('insite_api_token');
 
         $connectToken = $_POST['data']['connectToken'];
-          
+
         $nextUrl = $_POST['data']['nextUrl'];
 
         $headers = array(
