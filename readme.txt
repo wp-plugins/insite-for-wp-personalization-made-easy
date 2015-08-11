@@ -1,7 +1,7 @@
 ===  inSite for WP: Personalization Made Easy ===
 Plugin Name:  inSite for WP: Personalization Made Easy
 Contributors: insite.io
-Tags: inSite, Duda, website personalization, trigger, action, change, notification, personalization, smart site, custom website, marketing tool, conversion, dynamic web content, plugin, shortcode, behavior marketing, customer behavior, Dudamobile
+Tags: inSite, Duda, website personalization, trigger, action, change, notification, personalization, smart site, custom website, marketing tool, conversion, dynamic web content, plugin, shortcode, behavior marketing, customer behavior, Dudamobile, Automation, Scheduler
 Requires at least: 3.0.1
 Tested up to: 4.2.1
 Stable tag: 1.5.3
