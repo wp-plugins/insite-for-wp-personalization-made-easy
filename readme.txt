@@ -4,7 +4,7 @@ Contributors: insite.io
 Tags: inSite, Duda, website personalization, trigger, action, change, notification, personalization, smart site, custom website, marketing tool, conversion, dynamic web content, plugin, shortcode, behavior marketing, customer behavior, Dudamobile, Automation, Scheduler
 Requires at least: 3.0.1
 Tested up to: 4.2.1
-Stable tag: 1.5.3
+Stable tag: 1.5.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Donate Link: http://insite.io
@@ -103,6 +103,11 @@ No. When we add content to your site, we are doing it via JavaScript after the p
 
 == Changelog ==
 
+= 1.5.4 =
+* Improve wizard flow  and tool bar
+* Enhance inSites editing mode and fast activation
+* Some bug fixes
+
 = 1.5.3 =
 * Improve inSite loading time
 * Bug fixing
@@ -157,6 +162,9 @@ No. When we add content to your site, we are doing it via JavaScript after the p
 
 
 == Upgrade Notice ==
+
+= 1.5.3 =
+* Have an inSite? now it's easier to edit it. Update Now.
 
 = 1.5.3 =
 * inSite is faster than ever. Update to have a faster loading time.
