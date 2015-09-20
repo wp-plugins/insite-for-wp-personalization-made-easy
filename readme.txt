@@ -23,6 +23,7 @@ Our users love inSites. One told us,
 "inSites have helped me make my site more engaging and personalized. The options for customization are limitless, so I can target my users almost one-by-one!" 
 
 inSites can be created in less than 5 minutes, with NO coding whatsoever!
+
 * Add a special sale offer during sale periods
 * Inform users about new product and / or blog posts via notification bar
 * Celebrate the holidays using snowflakes or fireworks effects on your site
