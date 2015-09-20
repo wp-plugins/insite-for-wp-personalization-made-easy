@@ -9,7 +9,7 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Donate Link: http://insite.io
 
-inSite for WordPress is the simplest way to personalize your website. Utilize popups, a notification bar, and more inSite features to increase engagement and conversion rate
+inSite is the simplest way to personalize your site. Utilize popups, a notification bar, and more inSite features to increase engagement and conversions.
 
 == Description ==
 
