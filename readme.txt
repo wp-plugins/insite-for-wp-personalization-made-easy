@@ -1,38 +1,39 @@
 ===  inSite for WP: Personalization Made Easy ===
 Plugin Name:  inSite for WP: Personalization Made Easy
 Contributors: insite.io
-Tags: inSite, Duda, website personalization, trigger, action, change, notification, personalization, smart site, custom website, marketing tool, conversion, dynamic web content, plugin, shortcode, behavior marketing, customer behavior, Dudamobile, Automation, Scheduler
+Tags: inSite, Duda, website personalization, trigger, action, change, notification, popup, lightbox, overlay, personalization, smart site, custom website, marketing tool, conversion, dynamic web content, plugin, shortcode, behavior marketing, customer behavior, Dudamobile, Automation, Scheduler
 Requires at least: 3.0.1
 Tested up to: 4.2.1
-Stable tag: 1.5.4
+Stable tag: 1.6.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Donate Link: http://insite.io
 
-inSite for WordPress is the simplest way to personalize your site, add notification bar and increase conversion (beta version)
+inSite for WordPress is the simplest way to personalize your website. Utilize popups, a notification bar, and more inSite features to increase engagement and conversion rate
 
 == Description ==
 
-inSite solves a big problem facing website owners, developers and marketers: How do I deliver personalized web experiences without it costing me huge amounts of money and time?
+inSite solves a big problem facing website owners, developers and marketers: How do I create personalized web experiences without spending huge amounts of money and time?
 
-inSites are smart, personalized recipes that automatically change your website at pre determined trigger points (such as Time, Location or Visits etc) to create a richer, more engaged and relevant visitor experience that drives greater conversion.
+inSites are smart, personalized recipes that automatically change your website at pre-determined trigger points (such as time, location, or visit number) to create a richer, more engaged visitor experience that drives greater engagement and conversions.
 
-See video at: https://vimeo.com/126690533
+See our explanatory video at: https://vimeo.com/126690533.
 
-"inSites have helped me make my site more active and personal. am always thinking about what I can do or change to drive greater conversion because inSites are just so easy to use" A Business Owner
+Our users love inSites. One told us, 
+"inSites have helped me make my site more engaging and personalized. The options for customization are limitless, so I can target my users almost one-by-one!" 
 
-
-Each of these inSites can be created in less than 5 min with NO coding:
-
-* Add a special sale offer during sale periods.
-* Inform users about new product and / or blog posts via notification bar.
-* Celebrate the holidays using snowflakes or fireworks effects on your site.
-* Add  an introductory video to the site for first-time visitor.
-* Display a newsletter registration form for users that comes to the site for the second time.
-* Identify visitor coming from dedicated campaign URL and display different info on the homepage (no need for a different landing page any more).
-* Have a few locations for your business? Change the phone number according to the location of your site visitor.
-* Inform customers of your charity campaigns via a notification bar.
-* Are you a developer? you can create any inSite you can think of using our custom JavaScript trigger and action.
+inSites can be created in less than 5 minutes, with NO coding whatsoever!
+* Add a special sale offer during sale periods
+* Inform users about new product and / or blog posts via notification bar
+* Celebrate the holidays using snowflakes or fireworks effects on your site
+* Add an introductory video to the site for first-time visitor
+* Display a newsletter registration form for users that comes to the site for the second time
+* Display a popup offering third-time visitors a special discount
+* Identify visitor coming from dedicated campaign URL and display different info on the homepage (no need for a different landing page any more)
+* Show a popup advertising a nearby branch of your business to users within 5 miles
+* Have a few locations for your business? Change the phone number according to the location of your site visitor
+* Inform customers of your charity campaigns via a notification bar
+* Are you a developer? you can create any inSite you can think of using our custom JavaScript trigger and action
 
 
 == Installation ==
@@ -81,27 +82,36 @@ No. When we add content to your site, we are doing it via JavaScript after the p
 
 == Screenshots ==
 
-1. inSite Library
+1. Home Page - choose what to add to your site
 
-2. inSite Preview
+2. Explore inSites
 
-3. New Element Editor
+3. inSite Preview
 
-4. Notification Bar Editor
+4. Popup
 
-5. Special Effect Editor
+5. Notification Bar
 
-6. Time Trigger
+6. New Content 
 
-7. Location Trigger
+7. Special Effects
 
-8. Dashboard
+8. GEO location
 
-9. Profile
+9. Time Trigger
 
+10. inSite Dashboard
+
+11. My Profile Page
 
 
 == Changelog ==
+
+= 1.6.0 =
+* Now you can build smart POPUPS! Use inSite triggers to build popups that will engage your users and personalize your website. including predefined popups for you to use.
+* Improve preview links 
+* Improve library in inSite.io
+* Bug fixings 
 
 = 1.5.4 =
 * Improve wizard flow  and tool bar
@@ -162,6 +172,9 @@ No. When we add content to your site, we are doing it via JavaScript after the p
 
 
 == Upgrade Notice ==
+
+= 1.6.0 =
+* You can now add popup actions as inSites. Update Now.
 
 = 1.5.3 =
 * Have an inSite? now it's easier to edit it. Update Now.
