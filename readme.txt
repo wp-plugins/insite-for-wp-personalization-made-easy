@@ -108,6 +108,9 @@ No. When we add content to your site, we are doing it via JavaScript after the p
 
 == Changelog ==
 
+= 1.6.1 =
+* Minor fixes
+
 = 1.6.0 =
 * Now you can build smart POPUPS! Use inSite triggers to build popups that will engage your users and personalize your website. including predefined popups for you to use.
 * Improve preview links 
