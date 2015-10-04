@@ -177,6 +177,9 @@ No. When we add content to your site, we are doing it via JavaScript after the p
 
 == Upgrade Notice ==
 
+= 1.6.1 =
+* Minor fixes
+
 = 1.6.0 =
 * You can now add popup actions as inSites. Update Now.
 
