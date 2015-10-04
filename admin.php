@@ -21,18 +21,22 @@ class Insite_Admin
         add_action( 'wp_ajax_insite_cleanup', array( $this, 'cleanup' ) );
         add_action( 'wp_ajax_insite_connect_account', array( $this, 'connectAccount' ) );
 
+
     }
 
     /**
      * Add menu and pages
      */
     public function menu () {
-        add_menu_page( 'inSite', 'inSite', true, 'insite', array( $this, 'insitePage' ), plugins_url( "assets/images/v.png", __FILE__ ) );
-        add_submenu_page( 'insite', 'inSite Library', 'inSite Library', true, 'insite', array( $this, 'insitePage' ));
-        add_submenu_page( 'insite', 'My inSites', 'My inSites', true, 'insite-my', array( $this, 'dashboardPage' ));
-        add_submenu_page( 'insite', 'My Profile', 'My Profile', true, 'insite-profile', array( $this, 'dashboardPage' ));
-        add_submenu_page( 'insite', 'Stats', 'Stats', true, 'insite-stats', array( $this, 'dashboardPage'));
-        add_submenu_page( 'insite', 'FAQ', 'FAQ', true, 'insite-faq', array( $this, 'dashboardPage'));
+
+        add_menu_page( 'inSite', 'inSite', 'read', 'insite', array( $this, 'insitePage' ), plugins_url( "assets/images/v.png", __FILE__ ) );
+        add_submenu_page( 'insite', 'inSite Library', 'inSite Library', 'read', 'insite', array( $this, 'insitePage' ));
+        add_submenu_page( 'insite', 'My inSites', 'My inSites', 'read','insite-my', array( $this, 'dashboardPage' ));
+        add_submenu_page( 'insite', 'My Profile', 'My Profile', 'read','insite-profile', array( $this, 'dashboardPage' ));
+        add_submenu_page( 'insite', 'Stats', 'Stats', '1qread', 'insite-stats', array( $this, 'dashboardPage'));
+        add_submenu_page( 'insite', 'FAQ', 'FAQ', 'read', 'insite-faq', array( $this, 'dashboardPage'));
+        
+       
     }
 
     public function initInsitePlugin () {
@@ -372,6 +376,7 @@ class Insite_Admin
         wp_enqueue_script( 'insite-admin-crosser', 'https://insite.s3.amazonaws.com/io-plugin/crosser.js' );
         wp_enqueue_style( 'insite-admin', plugins_url( 'assets/css/admin.css', __FILE__ ) );
         wp_enqueue_script( 'insite-admin', plugins_url( 'assets/js/admin.js', __FILE__ ) );
+
     }
 
     public static function getPluginVersion() {
