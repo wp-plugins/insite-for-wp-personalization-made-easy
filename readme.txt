@@ -1,10 +1,10 @@
-﻿===  inSite for WP: Personalization Made Easy ===
+===  inSite for WP: Personalization Made Easy ===
 Plugin Name:  inSite for WP: Personalization Made Easy
 Contributors: insite.io
 Tags: inSite, Duda, website personalization, trigger, action, change, notification, popup, lightbox, overlay, personalization, smart site, custom website, marketing tool, conversion, dynamic web content, plugin, shortcode, behavior marketing, customer behavior, Dudamobile, Automation, Scheduler
 Requires at least: 3.0.1
 Tested up to: 4.2.1
-Stable tag: 1.6.1
+Stable tag: 1.6.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Donate Link: http://insite.io
@@ -108,8 +108,10 @@ No. When we add content to your site, we are doing it via JavaScript after the p
 
 == Changelog ==
 
-= 1.6.1 =
-* Minor fixes
+= 1.6.2 =
+* Referrer trigger - Want to display custom messages to visitors coming from different sites? This is for you!
+* Improve short code capabilities
+* Bug fixings in new elements layout and more 
 
 = 1.6.0 =
 * Now you can build smart POPUPS! Use inSite triggers to build popups that will engage your users and personalize your website. including predefined popups for you to use.
@@ -177,8 +179,8 @@ No. When we add content to your site, we are doing it via JavaScript after the p
 
 == Upgrade Notice ==
 
-= 1.6.1 =
-* Minor fixes
+= 1.6.2 =
+* Upgrade to customize your site using the new referrer trigger. Update Now!
 
 = 1.6.0 =
 * You can now add popup actions as inSites. Update Now.
