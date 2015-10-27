@@ -33,7 +33,7 @@ class Insite_Admin
         add_submenu_page( 'insite', 'inSite Library', 'inSite Library', 'read', 'insite', array( $this, 'insitePage' ));
         add_submenu_page( 'insite', 'My inSites', 'My inSites', 'read','insite-my', array( $this, 'dashboardPage' ));
         add_submenu_page( 'insite', 'My Profile', 'My Profile', 'read','insite-profile', array( $this, 'dashboardPage' ));
-        add_submenu_page( 'insite', 'Stats', 'Stats', '1qread', 'insite-stats', array( $this, 'dashboardPage'));
+        add_submenu_page( 'insite', 'Stats', 'Stats', 'read', 'insite-stats', array( $this, 'dashboardPage'));
         add_submenu_page( 'insite', 'FAQ', 'FAQ', 'read', 'insite-faq', array( $this, 'dashboardPage'));
         
        
