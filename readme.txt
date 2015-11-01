@@ -3,7 +3,7 @@ Plugin Name:  inSite for WP: Personalization Made Easy
 Contributors: insite.io
 Tags: inSite, Duda, website personalization, trigger, action, change, notification, popup, lightbox, overlay, personalization, smart site, custom website, marketing tool, conversion, dynamic web content, plugin, shortcode, behavior marketing, customer behavior, Dudamobile, Automation, Scheduler
 Requires at least: 3.0.1
-Tested up to: 4.2.1
+Tested up to: 4.3.1
 Stable tag: 1.6.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
